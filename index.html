@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raj - Devloper Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="curtain"></div>
+    <header>
+      <nav>
+        <div class="left">Raj's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#" onclick="scrollToHome()">Home</a></li>
+            <li><a href="#" onclick="scrollToAbout()" class="about">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" onclick="togglePopup()"> <span style="position: relative; top: 1px; right: 8px; margin-right: 5px;" class=".cross"><i class="fa-solid fa-phone"></i> Contact</span></a>
+            <div class="popupContainer" > 
+              <div class="popupcontent"></div>
+            </div></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSec">
+        <div class="leftSec">
+          <h1>Hi there,</h1>
+          <h2><span id="ele"></span></h2>
+          <p><span id="element"></span></p>
+          <button onclick="scrollToAbout()">About Me <i class="fa-solid fa-angles-down"></i></button>
+          <br>
+          <span class="callNum" style="font-size: 10px; position: relative; top: -25px;
+          left: 27px;"><i class="fa-solid fa-phone" style="padding: 4px; font-size: 13px;"></i> +91 6232149909</span>
+        </div>
+        <div class="rightSec"><img src="https://cdn-icons-png.flaticon.com/512/1803/1803671.png" alt="" /></div>
+      </section>
+      <hr />
+      <section class="secondSec">
+        
+        <div class="headLine"><span>Discover the Story Behind the Profile</span><h2>Learn About Me <i class="fa-solid fa-angle-right"></i></h2></div>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <div class="innertext">Through my journey in web development, I've navigated intricate coding challenges, sculpting digital experiences that marry aesthetics with functionality. Each project is a canvas where I weave together HTML, CSS, and JavaScript, painting responsive designs that adapt seamlessly across devices. My proficiency extends to frameworks like React and Angular, empowering dynamic user interactions and immersive web applications. With a keen eye for detail and a passion for innovation, I continually push the boundaries of what's possible, crafting solutions that resonate with both users and stakeholders alike.</div>
+            <div class="text">Work Experiance</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <div class="innertext">In my academic pursuits, I've forged a path illuminated by curiosity and dedication. Each achievement is a testament to my relentless pursuit of knowledge and excellence. From mastering the fundamentals of computer science to delving into advanced topics like data structures and algorithms, I've cultivated a robust foundation that underpins my expertise in web development. Whether it's earning accolades for innovative projects or securing top grades in challenging courses, my academic journey reflects a commitment to pushing boundaries and embracing lifelong learning. With every achievement, I strive to elevate my skills and contribute meaningfully to the ever-evolving landscape of technology.</div>
+            <div class="text">Academic Achievements</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <div class="innertext">In the realm of skills and expertise, I bring a versatile toolkit honed through hands-on experience and continuous learning. Proficient in a range of programming languages including HTML, CSS, JavaScript, and beyond, I adeptly craft captivating web experiences from concept to execution. My familiarity with frameworks such as React, Vue.js, and Angular empowers me to build dynamic and responsive applications that resonate with modern users. Alongside technical prowess, my skill set extends to UI/UX design principles, ensuring intuitive interfaces that prioritize user engagement and satisfaction. Coupled with effective communication and problem-solving abilities, I am poised to tackle challenges and drive innovation in the ever-evolving landscape of web development.</div>
+            <div class="text">Skills and Expertise</div>
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+      
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footText">
+        <div class="foot1">
+          <h3>Raj's Developer Portfolio</h3>
+        </div>
+        <div class="foot2">
+          <p>Stay Connected: Explore more about me on social media, or drop a message below. Let's keep the conversation going!</p>
+        </div>
+        <div class="foot3">
+          <i class="fa-brands fa-discord"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i>
+        </div>
+      </div>
+      <div class="footImg">
+        <div class="img1"><i class="fa-solid fa-globe"></i><span style="font-size: 8px; margin-top: 10px;"><address>www.google.com</span></address></div>
+        <div class="img2"><i class="fa-regular fa-envelope"></i><span style="font-size: 8px; margin-top: 10px;"><address>animetrix664@gmail.com</span></address></div>
+      </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+    <script>
+      var typed1 = new Typed("#ele", {
+        strings: [`I'm  <span style="color: #a9b2e4;">Raj Vishwakarma</span>`],
+        typeSpeed: 50,
+        onComplete: function () {
+          var typed2 = new Typed("#element", {
+            strings: [
+              `I'm a <span style="color: rgb(0, 0, 0); background-color: #a9b2e4; border-radius: 10px; padding: 1px 6px;">Web Developer!</span>`, `I love <span style="color: rgb(0, 0, 0); background-color: #a9b2e4; border-radius: 10px; padding: 1px 6px;">Web Development!</span>` 
+            ],
+            typeSpeed: 50,
+          });
+        },
+      });
+    </script>
+  </body>
+</html>
